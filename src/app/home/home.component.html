@@ -1,0 +1,65 @@
+<div class="header">
+
+
+
+<div class="container ">
+   
+        <h4>Companies Data</h4>
+        <div>
+            <button routerLink="/login" >Create</button>
+            <button routerLink="/login" >Logout</button>
+       
+</div>
+</div>
+</div>
+<div class="container-fluid">
+    <table >
+        <tr>
+            <th>company name</th>
+            <th>company place</th>
+            <th>Established year</th>
+            <th>Number of employees</th>
+
+
+
+        </tr>
+        <tr *ngFor="let data of jsonData" >
+<td>
+    {{data.cname}}
+
+</td>
+<td>
+    {{data.cplace}}
+
+</td><td>
+    {{data.ceyear}}
+
+</td><td>
+   <!-- <button (click)="showData()" > </button> -->
+   <p-button (click)="showDialog(data)" icon="pi pi-external-link" label="{{data.nemployee.length}}" class="button-table" >
+    
+   </p-button>
+
+   
+   <p-dialog header="Header" [(visible)]="visible" [style]="{width: '50vw',}" >
+      <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Skill</th>
+        </tr>
+        <tr *ngFor="let nesteditem of nestedEmpArray" >
+            <td> {{nesteditem.id}}  </td>
+            <td> {{nesteditem.name}} </td>
+            <td> {{nesteditem.skill}} </td>
+
+        </tr>
+      </table>
+   </p-dialog>
+   
+</td>
+        </tr>
+    </table>
+</div>
+
+

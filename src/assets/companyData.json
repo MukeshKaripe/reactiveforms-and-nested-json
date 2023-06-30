@@ -1,0 +1,67 @@
+[{
+    "id":1,
+    "cname":"Ahex",
+    "cplace":"hyd",
+    "ceyear":2000,
+    "nemployee":[{
+        "id":1,
+        "name":"sreeja",
+        "skill":"angular"
+    },
+    {
+        "id":2,
+        "name":"anil",
+        "skill":"ui"
+    },
+    {
+        "id":3,
+        "name":"navya",
+        "skill":"angular"
+    }
+]
+
+},
+{  "id":2,
+    "cname":"Solutions",
+    "cplace":"madhapur",
+    "ceyear":2002,
+    "nemployee":[{
+        "id":1,
+        "name":"sreeja",
+        "skill":"angular"
+    },
+    {
+        "id":2,
+        "name":"anil",
+        "skill":"ui"
+    },
+    {
+        "id":3,
+        "name":"n",
+        "skill":"angular"
+    }
+]
+
+},
+{  "id":3,
+    "cname":"tcs",
+    "cplace":"india",
+    "ceyear":1990,
+    "nemployee":[{
+        "id":1,
+        "name":"sreeja",
+        "skill":"angular"
+    },
+    {
+        "id":2,
+        "name":"anil",
+        "skill":"ui"
+    },
+    {
+        "id":3,
+        "name":"n",
+        "skill":"angular"
+    }
+]
+
+}]

@@ -1,0 +1,21 @@
+<div class="form-main">
+    <form action="" [formGroup]="login"  >
+
+<input type="text" placeholder="username" formControlName="username" >
+
+<input type="password" placeholder="password" formControlName="password">
+
+
+
+<div class=" " style="display: flex; gap: 20px;">
+    <!-- <p-button label="Submit"></p-button>
+<p-button label="cancel"></p-button> -->
+<button   (click)="loginMethod()"  >Login</button>
+<button>cancel</button>
+</div>
+
+
+
+    </form>
+</div>
+

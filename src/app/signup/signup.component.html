@@ -1,0 +1,32 @@
+<div class="form-main">
+    <form action="" [formGroup]="formreactiveimp"  (ngSubmit)="onSubmit()" >
+
+<input type="text" placeholder="username" formControlName="username" >
+<input type="email" placeholder="email" formControlName="email"   >
+<input type="number" placeholder="phonenumber" formControlName="phonenumber"   >
+
+<input type="password" placeholder="password" formControlName="password">
+<label for="">Gender</label>
+<div>
+    <input type="radio"><label for="">male</label>
+<input type="radio"><label for="">female</label>
+<input type="radio"><label for="">other</label>
+</div>
+<label for="">skill</label>
+<div>
+    <input type="radio"  formControlName="java" ><label for="">java</label>
+<input type="radio" formControlName="python"><label for=""  >python</label>
+</div>
+
+<div class=" " style="display: flex; gap: 20px;">
+    <!-- <p-button label="Submit"></p-button>
+<p-button label="cancel"></p-button> -->
+<button value="submit" >submit</button>
+<button>cancel</button>
+</div>
+<a routerLink="/login">Go to Login? </a>
+
+
+
+    </form>
+</div>
